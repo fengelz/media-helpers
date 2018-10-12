@@ -10,8 +10,17 @@
     "mediaqueries",
     "helper"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengelz/media-helpers.git"
+  },
   "author": "Sune Fengel",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fengelz/media-helpers/issues"
+  },
+  "homepage": "https://github.com/fengelz/media-helpers#readme",
+  
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.51",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
