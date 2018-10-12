@@ -1,6 +1,6 @@
 {
   "name": "media-helpers",
-  "version": "1.0.5",
+  "version": "1.0.4",
   "description": "Media queries and breakpoints",
   "main": "build/index",
   "scripts": {
