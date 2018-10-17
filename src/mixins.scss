@@ -4,22 +4,22 @@ $breakpoints: require('settings.json');
   @if $point == xx-large-up {
     @media screen and (min-width: #{map-get($breakpoints, 'xxLarge')}px) { @content ; }
   } @else if $point == x-large-only {
-    @media screen and (min-width: 1200px) and (max-width: 1339px) { @content ; }
+    @media screen and (min-width: #{map-get($breakpoints, 'xLarge')}px) and (max-width: #{map-get($breakpoints, 'xxLarge') - 1}px) { @content ; }
   } @else if $point == x-large-up {
-    @media screen and (min-width: 1200px) { @content ; }
+    @media screen and (min-width: #{map-get($breakpoints, 'xLarge')}px) { @content ; }
   } @else if $point == large-only {
-    @media screen and (min-width: 992px) and (max-width: 1199px) { @content ; }
+    @media screen and (min-width: #{map-get($breakpoints, 'large')}px) and (max-width: #{map-get($breakpoints, 'xLarge') - 1}px) { @content ; }
   } @else if $point == large-up {
-    @media screen and (min-width: 992px) { @content ; }
+    @media screen and (min-width: #{map-get($breakpoints, 'large')}px) { @content ; }
   } @else if $point == medium-only {
-    @media screen and (min-width: 768px) and (max-width: 991px) { @content ; }
+    @media screen and (min-width: #{map-get($breakpoints, 'medium')}px) and (max-width: #{map-get($breakpoints, 'large') - 1}px) { @content ; }
   } @else if $point == medium-up {
-    @media screen and (min-width: 768px)  { @content ; }
+    @media screen and (min-width: #{map-get($breakpoints, 'medium')}px)  { @content ; }
   } @else if $point == small-only {
-    @media screen and (max-width: 576px)  { @content ; }
+    @media screen and (max-width: #{map-get($breakpoints, 'small')}px)  { @content ; }
   } @else if $point == small-up {
-    @media screen and (min-width: 576px)  { @content ; }
+    @media screen and (min-width: #{map-get($breakpoints, 'small')}px)  { @content ; }
   }@else if $point == x-small-only {
-    @media screen and (max-width: 375px)  { @content ; }
+    @media screen and (max-width: #{map-get($breakpoints, 'xSmall')}px)  { @content ; }
   }
 }
